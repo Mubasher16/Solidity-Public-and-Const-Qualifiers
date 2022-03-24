@@ -1,0 +1,32 @@
+Data Types:
+
+Data types: 
+pragma solidity ^0.8.12;
+contract First{
+    int age=23;
+    bool ispaid= true;
+    string name= "Mubasher";
+    uint8 count= 2;
+    int8 index= 100;
+
+
+function perform() public{
+    age=25;
+    name=" Muhammad Mubasher";
+    count= 200;
+    ispaid= false;
+}
+function getage() public view returns (int)
+{
+return age;
+
+}
+function funcount() public view returns(uint8)
+{
+    return count*5;
+}
+function funstring() public view returns(string memory)
+{
+    return name;
+}
+}

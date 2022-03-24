@@ -1,0 +1,27 @@
+Public and Constant Qualifiers:
+
+
+pragma solidity ^0.8.12;
+contract First{
+    int age;
+    int public age2=24;
+    int private age3=25;
+    function updateage() public
+    {
+        age=50;
+    }
+function getage() public view returns (int)
+{
+return age;
+
+}
+function getage2() public view returns(int)
+{
+    return age2;
+}
+function getage3() public view returns(int)
+{
+    return age3*5;
+}
+}
+
